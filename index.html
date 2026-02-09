@@ -5,132 +5,141 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Shiva Sai Macha | Data Engineer</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
-body{
-  font-family: Arial, sans-serif;
-  margin:0;
-  background:#f4f7fb;
-  line-height:1.6;
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Poppins;background:#0f172a;color:#e2e8f0;line-height:1.6}
+section{max-width:1100px;margin:auto;padding:80px 20px}
+
+h1{font-size:48px}
+h2{font-size:32px;margin-bottom:25px;color:#38bdf8}
+
+.btn{
+  background:#38bdf8;
+  padding:12px 22px;
+  border-radius:8px;
+  text-decoration:none;
+  color:#0f172a;
+  font-weight:600;
 }
-header{
-  background:#0b3d91;
-  color:white;
-  padding:40px 20px;
-  text-align:center;
-}
-section{
-  max-width:950px;
-  margin:auto;
-  padding:40px 20px;
-}
-h2{color:#0b3d91}
+
+.hero{display:flex;flex-direction:column;justify-content:center;height:90vh}
+.hero p{margin:20px 0;font-size:18px;color:#94a3b8}
+
 .card{
-  background:white;
-  padding:20px;
+  background:#1e293b;
+  padding:25px;
+  border-radius:12px;
   margin:15px 0;
-  border-radius:10px;
-  box-shadow:0 2px 8px rgba(0,0,0,0.1);
 }
-footer{
-  background:#0b3d91;
-  color:white;
-  text-align:center;
-  padding:20px;
-}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+
+.timeline{border-left:2px solid #38bdf8;padding-left:25px}
+.timeline .item{margin-bottom:30px}
+
+footer{text-align:center;padding:30px;color:#94a3b8}
 </style>
 </head>
 
 <body>
 
-<header>
-  <h1>Shiva Sai Macha</h1>
-  <p>Senior Data Engineer | Python • PySpark • AWS • Azure • Databricks</p>
-  <p>Hyderabad, India | shivasaimacha@gmail.com | +91 9573572208</p>
-  <p>LinkedIn: linkedin.com/in/shivasaimacha</p>
-</header>
+<!-- HERO -->
+<section class="hero">
+  <h1>Hi, I'm Shiva Sai 👋</h1>
+  <h2>Senior Data Engineer</h2>
+  <p>
+    5+ years building scalable cloud data platforms using Azure, AWS,
+    Databricks and PySpark. I design reliable data pipelines that power
+    analytics and business decisions.
+  </p>
 
-<section>
-<h2>About Me</h2>
-<div class="card">
-Data Engineer with 5+ years of experience designing and building scalable cloud data pipelines 
-using AWS and Azure. Expert in ETL/ELT pipelines, big data processing with Apache Spark, 
-workflow orchestration using Airflow and Azure Data Factory, and delivering reliable data 
-solutions for analytics and reporting.
-</div>
+  <a class="btn" href="#contact">Contact Me</a>
 </section>
 
+<!-- ABOUT -->
 <section>
-<h2>Core Skills</h2>
-<div class="card">
-<b>Languages:</b> Python, SQL <br><br>
-<b>Big Data:</b> Apache Spark, PySpark, Hadoop, Hive, Kafka <br><br>
-<b>Cloud:</b> AWS (S3, Glue, Lambda, ECS, Kinesis), Azure (ADF, ADLS, Databricks) <br><br>
-<b>Orchestration:</b> Apache Airflow, Azure Data Factory <br><br>
-<b>Databases:</b> PostgreSQL, Oracle SQL, MongoDB, Delta Lake <br><br>
-<b>DevOps:</b> GitHub, Bitbucket, CI/CD, Docker, Kubernetes <br><br>
-<b>Monitoring:</b> Grafana, CloudWatch
-</div>
+  <h2>About Me</h2>
+  <div class="card">
+    Data Engineer with strong expertise in ETL/ELT pipelines, big data processing,
+    workflow orchestration and cloud platforms. Experienced in building
+    enterprise-grade data solutions processing millions of records from
+    multiple data sources.
+  </div>
 </section>
 
+<!-- SKILLS -->
 <section>
-<h2>Professional Experience</h2>
-
-<div class="card">
-<h3>Infosys — Senior Associate Consultant (Data Engineering)</h3>
-<p><i>Mar 2025 – Present</i></p>
-<ul>
-<li>Built enterprise ETL/ELT pipelines using Azure Data Factory.</li>
-<li>Developed Airflow DAGs with retry logic, SLA monitoring and alerting.</li>
-<li>Integrated pipelines with ADLS, SQL sinks and AWS S3.</li>
-<li>Implemented CI/CD for automated deployment using GitHub.</li>
-<li>Designed resilient data pipelines with monitoring via CloudWatch.</li>
-</ul>
-</div>
-
-<div class="card">
-<h3>LTIMindtree — Senior Data Engineer</h3>
-<p><i>Apr 2021 – Mar 2025</i></p>
-<ul>
-<li>Built 28 production ETL pipelines using PySpark.</li>
-<li>Integrated data from 30+ sources processing millions of records.</li>
-<li>Migrated Informatica workflows to Databricks → 33% faster loads.</li>
-<li>Implemented Kafka event-driven ingestion pipelines.</li>
-<li>Developed AWS Glue jobs and automated deployments.</li>
-<li>Improved data quality and pipeline stability.</li>
-</ul>
-</div>
-
+  <h2>Skills</h2>
+  <div class="grid">
+    <div class="card"><b>Languages</b><br>Python, SQL</div>
+    <div class="card"><b>Big Data</b><br>Spark, PySpark, Kafka</div>
+    <div class="card"><b>Cloud</b><br>AWS, Azure</div>
+    <div class="card"><b>Tools</b><br>Databricks, Airflow, ADF</div>
+    <div class="card"><b>DevOps</b><br>Docker, Kubernetes, CI/CD</div>
+    <div class="card"><b>Monitoring</b><br>Grafana, CloudWatch</div>
+  </div>
 </section>
 
+<!-- EXPERIENCE -->
 <section>
-<h2>Key Achievements</h2>
-<div class="card">
-• Built 28 production ETL pipelines processing millions of records <br><br>
-• Reduced data load time by 33% by migrating to Spark/Databricks <br><br>
-• Automated deployments across TEST/UAT/PROD environments <br><br>
-• Implemented real-time ingestion using Kafka and Kinesis
-</div>
+  <h2>Experience</h2>
+  <div class="timeline">
+
+    <div class="item">
+      <h3>Infosys — Senior Associate Consultant</h3>
+      <p>Mar 2025 – Present</p>
+      <p>
+        Built enterprise ETL pipelines using Azure Data Factory and Airflow.
+        Implemented CI/CD deployments and monitoring using CloudWatch.
+      </p>
+    </div>
+
+    <div class="item">
+      <h3>LTIMindtree — Senior Data Engineer</h3>
+      <p>Apr 2021 – Mar 2025</p>
+      <p>
+        Built 28 production PySpark pipelines integrating 30+ data sources.
+        Migrated Informatica workflows to Databricks improving performance by 33%.
+      </p>
+    </div>
+
+  </div>
 </section>
 
+<!-- PROJECTS -->
 <section>
-<h2>Education</h2>
-<div class="card">
-B.Tech — Electronics & Communication Engineering  
-Marri Laxman Reddy Institute of Technology, Hyderabad
-</div>
+  <h2>Key Achievements</h2>
+  <div class="grid">
+    <div class="card">
+      Built 28 ETL pipelines processing millions of records.
+    </div>
+    <div class="card">
+      Reduced data load time by 33% using Spark migration.
+    </div>
+    <div class="card">
+      Implemented Kafka real-time ingestion pipelines.
+    </div>
+    <div class="card">
+      Automated CI/CD deployments across environments.
+    </div>
+  </div>
 </section>
 
-<section>
-<h2>Contact</h2>
-<div class="card">
-Email: shivasaimacha@gmail.com <br><br>
-Phone: +91 9573572208 <br><br>
-LinkedIn: linkedin.com/in/shivasaimacha
-</div>
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="card">
+    📧 shivasaimacha@gmail.com <br><br>
+    📞 +91 9573572208 <br><br>
+    🔗 linkedin.com/in/shivasaimacha <br><br>
+    💻 github.com/yourusername
+  </div>
 </section>
 
 <footer>
-© 2026 Shiva Sai Macha
+  © 2026 Shiva Sai Macha
 </footer>
 
 </body>
